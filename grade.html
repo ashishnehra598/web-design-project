@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="a1" placeholder="hindi">
+    <input type="number" id="a2" placeholder="english">
+    <input type="number" id="a3" placeholder="maths">
+    <input type="number" id="a4" placeholder="phy">
+    <input type="number" id="a5" placeholder="chemstry">
+    <button onclick="my()"> result</button>
+    <h4 id="b1"></h4>
+    <h4 id="b2"></h4>
+    <h4 id="b3"></h4>
+
+    <script>
+        function my() {
+            var a = document.getElementById("a1").value;
+            var b = document.getElementById("a2").value;
+            var c = document.getElementById("a3").value;
+            var d = document.getElementById("a4").value;
+            var e = document.getElementById("a5").value;
+            var x = (parseInt)(a) + (parseInt) (b) + (parseInt) (c) + (parseInt) (d) + (parseInt) (e) ;
+            var y = x*100/500;
+            document.getElementById("b1").innerHTML = "total marks =" + x;
+            document.getElementById("b2").innerHTML = "percentage =" + y;
+            if (y > 90) {
+                document.getElementById("b3").innerHTML = "grade = A+";
+            }
+            if ( y < 89 && y > 60) {
+                document.getElementById("b3").innerHTML = "grade = A";
+            }
+            if ( y < 59 && y > 45) {
+                document.getElementById("b3").innerHTML = " grade = B";
+            }
+            if ( y < 44 && y > 33) {
+                document.getElementById("b3").innerHTML = " grade = C";
+            }
+            if ( y < 33) {
+                document.getElementById("b3").innerHTML = "grade = fail";
+
+            }
+            
+        }
+    </script>
+</body>
+</html>

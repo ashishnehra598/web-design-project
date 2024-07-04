@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="a1">
+    <button onclick="my()">click</button>
+
+    <script>
+    function my(){
+        var x = document.getElementById("a1").value;
+        for(r = 1;r <=10;r++){
+            document.write(r*x)
+            document.write("<br>")
+        }
+
+    }
+    </script>
+</body>
+</html>
